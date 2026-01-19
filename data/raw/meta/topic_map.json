@@ -1,0 +1,77 @@
+[
+  {
+    "id": "A1",
+    "title": "Spark architecture & execution",
+    "keywords": [
+      "driver",
+      "executor",
+      "job",
+      "stage",
+      "task",
+      "dag",
+      "lazy",
+      "shuffle",
+      "partition",
+      "repartition",
+      "coalesce"
+    ],
+    "related_files": [
+      "notes/02_spark_core_rdd.md",
+      "notes/03_spark_dataframes.md",
+      "meta/00_topic_map.md"
+    ]
+  },
+  {
+    "id": "B3",
+    "title": "DataFrame joins",
+    "keywords": [
+      "join",
+      "inner",
+      "left",
+      "right",
+      "full",
+      "broadcast",
+      "semi",
+      "anti",
+      "skew"
+    ],
+    "related_files": [
+      "notes/03_spark_dataframes.md",
+      "code/joins_aggregations.py"
+    ]
+  },
+  {
+    "id": "D2",
+    "title": "GraphFrames algorithms (PageRank, BFS, CC, ...)",
+    "keywords": [
+      "graphframe",
+      "pagerank",
+      "bfs",
+      "connectedcomponents",
+      "triangle",
+      "shortestpaths",
+      "motif"
+    ],
+    "related_files": [
+      "notes/05_graph_algorithms_pagerank_bfs_cc.md",
+      "notes/06_graphframes_api_motifs.md",
+      "code/graphframes_pagerank.py",
+      "code/graphframes_bfs.py"
+    ]
+  },
+  {
+    "id": "E2",
+    "title": "Personalized PageRank (PPR)",
+    "keywords": [
+      "ppr",
+      "personalized pagerank",
+      "random walk",
+      "restart",
+      "seed"
+    ],
+    "related_files": [
+      "notes/07_reco_ppr_music_graph.md",
+      "code/ppr_recommendation.py"
+    ]
+  }
+]

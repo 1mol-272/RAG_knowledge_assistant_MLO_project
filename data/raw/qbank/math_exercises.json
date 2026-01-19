@@ -1,0 +1,27 @@
+{
+  "meta": {
+    "version": "1.0",
+    "format": "math"
+  },
+  "exercises": [
+    {
+      "id": "math_001",
+      "topic": "pagerank",
+      "difficulty": "medium",
+      "question": "Derive the PageRank update equation and explain the role of the teleport term.",
+      "expected": [
+        "PR(v) = (1-d)/N + d * sum_{u->v} PR(u)/outdeg(u)",
+        "Teleport ensures ergodicity, handles sinks/spider traps"
+      ]
+    },
+    {
+      "id": "math_002",
+      "topic": "complexity",
+      "difficulty": "easy",
+      "question": "Give time complexity of BFS on adjacency list and why it is O(V+E).",
+      "expected": [
+        "Each node visited once, each edge explored at most once"
+      ]
+    }
+  ]
+}

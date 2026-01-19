@@ -1,0 +1,44 @@
+{
+  "meta": {
+    "version": "1.0",
+    "format": "coding"
+  },
+  "tasks": [
+    {
+      "id": "code_001",
+      "topic": "dataframe_join_agg",
+      "difficulty": "easy",
+      "prompt": "Given two DataFrames (users, purchases), compute total spend per user and return top 10 users.",
+      "requirements": [
+        "Use join + groupBy + agg",
+        "Handle users with no purchases (left join, fill null with 0)",
+        "Sort by total descending"
+      ],
+      "starter_file": "code/03_joins_and_aggs.py"
+    },
+    {
+      "id": "code_002",
+      "topic": "graphframes_pagerank",
+      "difficulty": "medium",
+      "prompt": "Build a GraphFrame from vertices/edges and compute PageRank; return top-k vertices by rank.",
+      "requirements": [
+        "Vertices must have column id",
+        "Edges must have src,dst",
+        "Use maxIter or tol"
+      ],
+      "starter_file": "code/06_graphframes_pagerank.py"
+    },
+    {
+      "id": "code_003",
+      "topic": "triangle_count",
+      "difficulty": "hard",
+      "prompt": "Count triangles using only DataFrame joins (no GraphFrames).",
+      "requirements": [
+        "Avoid double counting",
+        "Explain your join conditions",
+        "Return triangle list + count"
+      ],
+      "starter_file": "code/09_triangle_count_dataframe_only.py"
+    }
+  ]
+}
