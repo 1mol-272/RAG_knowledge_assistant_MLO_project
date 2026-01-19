@@ -22,3 +22,8 @@ Git/
 .cache/
 kagglehub/
 *.csv
+
+*.egg-info/
+dist/
+build/
+
