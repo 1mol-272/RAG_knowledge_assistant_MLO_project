@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "version": "1.0",
+    "format": "mcq",
+    "topics": [
+      "spark",
+      "dataframes",
+      "graphs",
+      "graphframes"
+    ]
+  },
+  "questions": [
+    {
+      "id": "mcq_001",
+      "topic": "spark_basics",
+      "difficulty": "easy",
+      "question": "Which statement is true about Spark transformations?",
+      "choices": [
+        "They execute immediately when called",
+        "They are lazy and build a logical plan",
+        "They always trigger a shuffle",
+        "They can only be applied to RDDs"
+      ],
+      "answer_index": 1,
+      "explanation": "Transformations are lazy; actions trigger execution."
+    },
+    {
+      "id": "mcq_002",
+      "topic": "dataframes",
+      "difficulty": "easy",
+      "question": "What is the main benefit of DataFrames over RDDs?",
+      "choices": [
+        "They allow arbitrary Python objects",
+        "They are optimized by Spark SQL (Catalyst) and can use efficient execution",
+        "They never spill to disk",
+        "They do not require a SparkSession"
+      ],
+      "answer_index": 1,
+      "explanation": "DataFrames are optimized and can leverage code generation and SQL planning."
+    },
+    {
+      "id": "mcq_003",
+      "topic": "joins",
+      "difficulty": "medium",
+      "question": "When is a broadcast hash join typically beneficial?",
+      "choices": [
+        "When both tables are huge",
+        "When one table is small enough to fit in memory on each executor",
+        "When keys are not sortable",
+        "When you want to force a shuffle"
+      ],
+      "answer_index": 1,
+      "explanation": "Broadcasting the small table avoids shuffling the large table."
+    },
+    {
+      "id": "mcq_004",
+      "topic": "graphframes",
+      "difficulty": "easy",
+      "question": "In GraphFrames, what are the required column names for edges by default?",
+      "choices": [
+        "from,to",
+        "src,dst",
+        "u,v",
+        "start,end"
+      ],
+      "answer_index": 1,
+      "explanation": "GraphFrames expects edge columns `src` and `dst` by default."
+    },
+    {
+      "id": "mcq_005",
+      "topic": "pagerank",
+      "difficulty": "medium",
+      "question": "In PageRank, the damping factor d mainly controls:",
+      "choices": [
+        "The maximum path length",
+        "The probability of following links vs teleporting",
+        "Whether the graph must be undirected",
+        "The number of connected components"
+      ],
+      "answer_index": 1,
+      "explanation": "d is the probability of following outgoing links; (1-d) is teleport."
+    }
+  ]
+}

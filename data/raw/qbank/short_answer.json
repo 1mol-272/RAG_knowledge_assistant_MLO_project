@@ -1,0 +1,41 @@
+{
+  "meta": {
+    "version": "1.0",
+    "format": "short_answer"
+  },
+  "questions": [
+    {
+      "id": "sa_001",
+      "topic": "spark_execution",
+      "difficulty": "easy",
+      "question": "Explain the difference between a transformation and an action in Spark. Give two examples of each.",
+      "expected_points": [
+        "Transformations are lazy and build a DAG (e.g., select, filter, withColumn, join)",
+        "Actions trigger execution (e.g., count, collect, write)",
+        "Spark optimizes before execution"
+      ]
+    },
+    {
+      "id": "sa_002",
+      "topic": "shuffle",
+      "difficulty": "medium",
+      "question": "What is a shuffle in Spark? List operations that commonly trigger shuffles and how to reduce them.",
+      "expected_points": [
+        "Data redistribution across partitions",
+        "Triggered by groupBy, join, distinct, orderBy, repartition",
+        "Reduce by filtering early, broadcasting small table, pre-partitioning, using correct join keys"
+      ]
+    },
+    {
+      "id": "sa_003",
+      "topic": "graphframes_motifs",
+      "difficulty": "medium",
+      "question": "What is motif finding in GraphFrames? Provide an example pattern for triangle detection.",
+      "expected_points": [
+        "Subgraph pattern matching over edges",
+        "Triangle example: (a)-[e1]->(b); (b)-[e2]->(c); (c)-[e3]->(a)",
+        "Need constraints to avoid duplicates"
+      ]
+    }
+  ]
+}
